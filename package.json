@@ -1,0 +1,30 @@
+{
+  "name": "drag_zxy",
+  "version": "1.0.5",
+  "description": "对话框",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhxueyuan/zxy0530.git"
+  },
+  "keywords": [
+    "对话框"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhxueyuan/zxy0530/issues"
+  },
+  "homepage": "https://github.com/zhxueyuan/zxy0530#readme",
+  "devDependencies": {
+    "grunt": "^1.1.0",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-jshint": "^2.1.0",
+    "grunt-contrib-uglify": "^4.0.1",
+    "grunt-text-replace": "^0.4.0"
+  }
+}

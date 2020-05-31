@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>对话框</title>
+        <!-- zui -->
+        <!-- <link href="zui/dist/css/zui.min.css" rel="stylesheet"> -->
+        <link rel="stylesheet" href="drag.css">
+	</head>
+	<body>
+        
+       <!-- 大对话框 -->
+       <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myLgModal" id="big">大对话框</button>
+       <!-- <input type="button" id="big" value="大对话框"> -->
+         <div class="modal-dialog" id="box1" style="display: none;">
+           <div class="modal-content">
+             <div class="modal-header">
+              <h4 class="modal-title">标题</h4>
+                     <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span></button>
+                   </div>
+                   <div class="modal-body">
+                     <p>主题内容...</p>
+                   </div>
+                   <div class="modal-footer">
+                     <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                     <button type="button" class="btn btn-primary">确定</button>
+                   </div>
+           </div>
+         </div>
+        <!-- 小对话框 -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mySmModal" id="xiao">小对话框</button>
+       <!-- <input type="button" id="xiao" value="小对话框"> -->
+        
+          <div class="modal-dialog"  id="box2" style="display: none;">
+            <div class="modal-content">
+             <div class="modal-header">
+              <h4 class="modal-title">标题</h4>
+                     <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span></button>
+                   </div>
+                   <div class="modal-body">
+                     <p>主题内容...</p>
+                   </div>
+                   <div class="modal-footer">
+                     <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                     <button type="button" class="btn btn-primary">确定</button>
+                   </div>
+            </div>
+          </div>
+	</body>
+</html>
+<script src="https://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+<!-- <script src="zui/dist/js/zui.min.js"></script> -->
+<script src="js/drag_zxy-1.0.5.min.js"></script>
+<script>
+    var obj1 = {
+      id:"box1",//button标签的id
+      type:"big",//对话框的宽度
+      color:"#808080",//背景颜色
+      title:"懂事的人，一生都在为难自己",//对话框标题内容
+      title_color:"red",//标题颜色
+      content:"就像樊登先生说的：“假如你有两只小狗，一只小狗很乖，很听话，一只小狗，不听话，乱叫乱咬人，如果你不得已要抛弃一只，你一定会抛弃内只更乖的，因为，至少有人会捡它”。",
+      content_color:"black",//内容的颜色
+      positionX:"center",//设置对话框显示位置
+      positionY:"center",//设置对话框显示位置
+      drag:true,//拖动
+      animation:true,
+    }
+    var obj2 = {
+      id:"box2",//button标签的id
+      type:"small",//对话框的宽度
+      color:"#808080",//背景颜色
+      title:"懂事的人，一生都在为难自己",//对话框标题内容
+      title_color:"red",//标题颜色
+      content:"就像樊登先生说的：“假如你有两只小狗，一只小狗很乖，很听话，一只小狗，不听话，乱叫乱咬人，如果你不得已要抛弃一只，你一定会抛弃内只更乖的，因为，至少有人会捡它”。",
+      content_color:"blue",//内容的字体颜色
+      positionX:"center",//设置对话框显示位置
+      positionY:"center",//设置对话框显示位置
+      drag:false,//拖动
+      animation:false,//动画
+    }
+    big.onclick = function(){
+      var diu = new Prompt(obj1);
+    }
+    xiao.onclick = function(){
+      var diu = new Prompt(obj2);
+    }
+</script>
